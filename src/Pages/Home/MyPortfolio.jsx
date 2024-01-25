@@ -7,12 +7,6 @@ const MyPortfolio = () => (
       <div className="portfolio--container">
         <h2 className="section--heading">My Projects</h2>
       </div>
-      <div>
-        <a className="btn btn-github" href="https://github.com/MargaretTechworld" target="_blank" rel="noreferrer">
-          <img className="github-icon" src="./img/github.png" alt="GitHub" />
-          Visit My GitHub
-        </a>
-      </div>
     </div>
     <div className="portfolio--section--container">
       {data?.portfolio?.map((item) => (
@@ -23,15 +17,35 @@ const MyPortfolio = () => (
           <div className="portfolio--section--card--content">
             <div>
               <h3 className="portfolio--section--title">{item.title}</h3>
+              <div className="date-type">
+                <h4>{item.type}</h4>
+                <h4>
+                  ●
+                  {item.date}
+                </h4>
+              </div>
               <p className="text-md">{item.description}</p>
             </div>
-            <p className="text-sm portfolio--link">
-              <a className="live-link" href={item.link} target="_blank" rel="noreferrer">
-                View Live
+
+            <div className="github-live">
+              <p className="text-sm portfolio--link">
+                <a className="live-link" href={item.github} target="_blank" rel="noreferrer">
+                  View in GitHub
+                  <img className="right-arrow" src="./img/right-arrow.png" alt="Right Arrow" />
+                </a>
+              </p>
+              <p className="text-sm portfolio--link">
                 {' '}
-                <img className="right-arrow" src="./img/right-arrow.png" alt="Right Arrow" />
-              </a>
-            </p>
+                <a className="live-link" href={item.link} target="_blank" rel="noreferrer">
+                  View Live
+                  {' '}
+                  <img className="right-arrow" src="./img/right-arrow.png" alt="Right Arrow" />
+                </a>
+                {' '}
+
+              </p>
+            </div>
+
           </div>
         </div>
       ))}

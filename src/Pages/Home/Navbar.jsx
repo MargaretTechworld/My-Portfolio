@@ -98,7 +98,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-          <Link
+            <Link
               onClick={closeMenu}
               activeClass="navbar--active-content"
               spy
@@ -112,26 +112,27 @@ const Navbar = () => {
             >
               Contact
             </Link>
-            
+
           </li>
+          <Link
+            onClick={closeMenu}
+            activeClass="navbar--active-content"
+            spy
+            smooth
+            offset={-70}
+            duration={500}
+            to="testimonial"
+            className="navbar--content"
+            role="menuitem"
+            tabIndex={0}
+          >
+            <div className="flag-cont">
+              <img className="flag" src="./img/flag.svg" alt="Sierra Leonean" />
+              Sierra Leonean
+            </div>
+          </Link>
         </ul>
-        <Link
-              onClick={closeMenu}
-              activeClass="navbar--active-content"
-              spy
-              smooth
-              offset={-70}
-              duration={500}
-              to="testimonial"
-              className="navbar--content"
-              role="menuitem"
-              tabIndex={0}
-            >
-              <div className="flag-cont">
-                <img className="flag" src="./img/flag.svg" alt="Sierra Leonean" />
-                Sierra Leonean
-              </div>
-            </Link>
+
       </div>
     </nav>
   );
