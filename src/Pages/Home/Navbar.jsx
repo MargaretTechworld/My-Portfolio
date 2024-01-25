@@ -98,7 +98,25 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link
+          <Link
+              onClick={closeMenu}
+              activeClass="navbar--active-content"
+              spy
+              smooth
+              offset={-70}
+              duration={500}
+              to="Contact"
+              className="navbar--content"
+              role="menuitem"
+              tabIndex={0}
+            >
+              Contact
+            </Link>
+            
+          </li>
+        </ul>
+      </div>
+      <Link
               onClick={closeMenu}
               activeClass="navbar--active-content"
               spy
@@ -115,22 +133,6 @@ const Navbar = () => {
                 Sierra Leonean
               </div>
             </Link>
-          </li>
-        </ul>
-      </div>
-      <Link
-        onClick={closeMenu}
-        activeClass="navbar--active-content"
-        spy
-        smooth
-        offset={-70}
-        duration={500}
-        to="Contact"
-        className="btn btn-outline-primary"
-        role="button"
-      >
-        Contact Me
-      </Link>
     </nav>
   );
 };
