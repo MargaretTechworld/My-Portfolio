@@ -115,8 +115,7 @@ const Navbar = () => {
             
           </li>
         </ul>
-      </div>
-      <Link
+        <Link
               onClick={closeMenu}
               activeClass="navbar--active-content"
               spy
@@ -133,6 +132,7 @@ const Navbar = () => {
                 Sierra Leonean
               </div>
             </Link>
+      </div>
     </nav>
   );
 };
