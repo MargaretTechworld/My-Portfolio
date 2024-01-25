@@ -26,7 +26,7 @@ const MyPortfolio = () => (
               <p className="text-md">{item.description}</p>
             </div>
             <p className="text-sm portfolio--link">
-              <a className="live-link" href={item.link} target="_blank" >
+              <a className="live-link" href={item.link} target="_blank" rel="noreferrer">
                 View Live
                 {' '}
                 <img className="right-arrow" src="./img/right-arrow.png" alt="Right Arrow" />
