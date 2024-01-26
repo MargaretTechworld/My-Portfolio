@@ -65,7 +65,7 @@
         "title": "Global Tech Summit",
         "description": "Global Tech Summit is an immersive online conference, connecting industry leaders and tech enthusiasts worldwide to explore advancements and foster connections.",
         "link": "https://margarettechworld.github.io/GlobalTechSummit/",
-        "github":"",
+        "github":"https://github.com/MargaretTechworld/GlobalTechSummit",
         "type":"Front-End",
         "date": "2023"
 
@@ -76,7 +76,7 @@
         "title": "BookStore",
         "description": "BookStore is a sleek web app, simplifying book management with seamless API interactions for effortless book handling in a user-friendly interface.",
         "link": "https://bookstore-40xv.onrender.com/",
-        "github":"",
+        "github":"https://github.com/MargaretTechworld/bookstore",
         "type":"Front-End",
         "date": "2023"
       },
@@ -86,7 +86,7 @@
         "title": "MealConnect",
         "description": "MealConnect is an exciting web app for food enthusiasts, offering a delightful dining experience with flavors, recipes, and customized reservations.",
         "link": "https://deployment--eloquent-malabi-441830.netlify.app/dashboard",
-        "github":"",
+        "github":"https://github.com/MargaretTechworld/meal_connect-frontend",
         "type":"Full-Stack",
         "date": "2023"
       }
