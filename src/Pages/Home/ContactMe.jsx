@@ -1,73 +1,86 @@
 import React from 'react';
 
 const ContactMe = () => (
-  <section id="Contact" className="contact--section">
+  <>
+    <h2 className="contact-head">Get In Touch</h2>
     <div>
-      <h2>Get In Touch</h2>
       <p className="text-lg">
         Interested in working together or have a question? Fill out the form below,
-        <br />
-        {' '}
         and I&apos;ll get back to you as soon as possible.
       </p>
     </div>
-    <form className="contact--form--container">
-      <div className="container">
-        <label htmlFor="first-name" className="contact--label">
-          <span className="text-md">First Name</span>
-          <input
-            type="text"
-            className="contact--input text-md"
-            name="first-name"
-            id="first-name"
-            required
-          />
-        </label>
-        <label htmlFor="last-name" className="contact--label">
-          <span className="text-md">Last Name</span>
-          <input
-            type="text"
-            className="contact--input text-md"
-            name="last-name"
-            id="last-name"
-            required
-          />
-        </label>
-        <label htmlFor="email" className="contact--label">
-          <span className="text-md">Email</span>
-          <input
-            type="email"
-            className="contact--input text-md"
-            name="email"
-            id="email"
-            required
-          />
-        </label>
-        <label htmlFor="phone-number" className="contact--label">
-          <span className="text-md">Phone Number</span>
-          <input
-            type="number"
-            className="contact--input text-md"
-            name="phone-number"
-            id="phone-number"
-            required
-          />
-        </label>
-      </div>
-      <label htmlFor="message" className="contact--label">
-        <span className="text-md">Message</span>
-        <textarea
-          className="contact--input text-md"
-          id="message"
-          rows="8"
-          placeholder="Type your message..."
-        />
-      </label>
+    <section id="Contact" className="contact--section">
       <div>
-        <button className="btn btn-primary contact--form--btn" type="submit">Submit</button>
+        <img className="us-img" src="./img/us.jpg" alt="me" />
+        <div className="contact-form-first-div">
+          <p>
+            <img className="contact-social" src="https://img.icons8.com/?size=96&id=13826&format=png" alt="email-icon" />
+            {' '}
+            margarettechworld@gmail.com
+          </p>
+          <p>
+            <img className="contact-social" src="https://img.icons8.com/?size=96&id=110288&format=png" alt="phone-icon" />
+            {' '}
+            +23279186929
+          </p>
+          <p>
+            <img className="contact-social" src="https://img.icons8.com/?size=96&id=13800&format=png" alt="location-icon" />
+            {' '}
+            Address: 9A Pipe Line Off wilkinson Road, Freetown, Sierra Leone
+          </p>
+        </div>
       </div>
-    </form>
-  </section>
+
+      <div className="contact-second-div">
+        <form className="contact--form--container">
+          <div className="container">
+            <input
+              type="text"
+              className="contact--input text-md"
+              name="first-name"
+              id="first-name"
+              placeholder="First Name"
+              required
+            />
+            <input
+              type="text"
+              className="contact--input text-md"
+              name="last-name"
+              id="last-name"
+              placeholder="Last Name"
+              required
+            />
+            <input
+              type="email"
+              className="contact--input text-md"
+              name="email"
+              id="email"
+              placeholder="Email"
+              required
+            />
+            <input
+              type="number"
+              className="contact--input text-md"
+              name="phone-number"
+              id="phone-number"
+              placeholder="Phone Number"
+              required
+            />
+          </div>
+          <textarea
+            className="contact--input text-md"
+            id="message"
+            rows="8"
+            placeholder="Type your message..."
+          />
+          <div>
+            <button className="btn btn-primary contact--form--btn" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+
+    </section>
+  </>
 );
 
 export default ContactMe;
