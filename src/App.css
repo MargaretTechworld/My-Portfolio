@@ -439,6 +439,7 @@ h3 {
   flex-direction: column;
   align-items: flex-start;
   gap: 80px;
+
 }
 
 .portfolio--container-box {
@@ -493,6 +494,10 @@ h3 {
   align-items: flex-start;
   gap: 14px;
   align-self: stretch;
+  transition: transform 1.0s;
+}
+.portfolio--section--card:hover {
+  transform: scale(1.1);
 }
 
 .portfolio--section--title {
