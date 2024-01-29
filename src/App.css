@@ -456,11 +456,11 @@ h3 {
 }
 
 .portfolio--section--container {
-  display: flex; 
+  display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   gap: 42.6px;
-  width: 100%; 
+  width: 100%;
 }
 
 .portfolio--section--img {
@@ -828,7 +828,8 @@ input[type="checkbox"] {
   .portfolio--container-box {
     gap: 30px;
   }
-  .portfolio--section{
+
+  .portfolio--section {
     padding: 80px 40px;
   }
 
