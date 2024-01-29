@@ -14,8 +14,8 @@ const HeroSection = () => (
           Developer
         </h1>
         <p className="hero--section-description">
-          Passionate full-stack web developer creating impactful user experiences,
-          focused on creating impactful user experiences.
+          Passionate full-stack web developer focused on
+          creating impactful user experiences through immersive and high-quality solutions.
         </p>
       </div>
       <div className="skills-container">
