@@ -829,13 +829,17 @@ input[type="checkbox"] {
     gap: 30px;
   }
 
+  .portfolio--section {
+    padding: 80px 40px;
+  }
+
   .skills--section,
   .testimonial--section,
   .contact--section,
   .footer--container {
     gap: 20px;
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .about--section {
