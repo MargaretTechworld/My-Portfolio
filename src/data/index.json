@@ -89,8 +89,17 @@
         "github":"https://github.com/MargaretTechworld/meal_connect-frontend",
         "type":"Full-Stack",
         "date": "2023"
-      }
-     
+      },
+      {
+        "id": "4",
+        "src": "./img/placeholder-image 3.png",
+        "title": "Active Companies",
+        "description": "Active Companies is an app offering detailed profiles and performance metrics of various companies, providing valuable insights to users",
+        "link": "https://graceful-beijinho-8c4721.netlify.app/",
+        "github":"https://github.com/MargaretTechworld/active-companies",
+        "type":"Front-End",
+        "date": "2023"
+      } 
     ],
     
     "testimonial": [
