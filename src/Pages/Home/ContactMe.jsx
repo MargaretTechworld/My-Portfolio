@@ -114,6 +114,7 @@ const ContactMe = () => {
               id="message"
               rows="8"
               placeholder="Type your message..."
+              required
             />
             <div>
               <button className="btn btn-primary contact--form--btn" type="submit">Submit</button>
