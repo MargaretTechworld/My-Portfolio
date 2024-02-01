@@ -948,7 +948,9 @@ input[type="checkbox"] {
     flex-direction: column;
     padding: 0;
   }
-
+.about--section{
+  padding: 0;
+}
   .contact--input {
     width: 300px;
   }
