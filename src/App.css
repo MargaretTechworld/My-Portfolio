@@ -1,9 +1,10 @@
 /* Global CSS */
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -28,24 +29,27 @@ p {
   border-radius: 5%;
   margin: 0 auto;
 }
+
 .p-section {
   margin: 3rem auto;
-  width:80%;
-  position: 'relative';
+  width: 80%;
+  position: relative;
   z-index: 1;
 }
-.slide-card{
+
+.slide-card {
   background: #fff;
   box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.15);
   padding: 20px 10px 10px 10px;
   border-radius: 7%;
 }
-.slide-link{
+
+.slide-link {
   display: flex;
   justify-content: space-between;
 }
 
-.slide-content{
+.slide-content {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -59,15 +63,18 @@ p {
   transition: transform 300ms;
   opacity: 0.5;
 }
-.slide:hover{
-  transform: scale(1,1);
-  opacity:1 ;
+
+.slide:hover {
+  transform: scale(1, 1);
+  opacity: 1;
 }
-.project-heading{
+
+.project-heading {
   text-align: center;
   margin-bottom: 1%;
 }
-.project-paragraph{
+
+.project-paragraph {
   text-align: center;
   color: black;
   font-size: 24px;
@@ -78,11 +85,11 @@ p {
 }
 
 .activeSlide {
-  transform: translate(0px, 0px);
+  transform: translate(0, 0);
   opacity: 1;
 }
+
 .arrow {
-  background-color: #fff;
   width: 40px;
   height: 40px;
   display: flex;
@@ -115,6 +122,7 @@ p {
   top: 50%;
   z-index: 1;
 }
+
 :root {
   --primary: #5e3bee;
   --heading-color: #282938;
@@ -634,6 +642,7 @@ h3 {
   text-decoration: none;
   color: black;
 }
+
 .github-link:hover {
   background-color: black;
   color: white;
@@ -888,39 +897,41 @@ input[type="checkbox"] {
   .btn-outline-primary {
     display: none;
   }
+
   .next {
     right: 0%;
     top: 40%;
   }
-  
+
   .prev {
     left: 0%;
     top: 40%;
   }
-  h3{
+
+  h3 {
     text-align: center;
   }
-  h1{
+
+  h1 {
     text-align: center;
   }
 
   .hero--section {
     display: flex;
-    padding: 133.333px 0px 30.333px;
+    padding: 133.333px 0 30.333px;
     flex-direction: column-reverse;
-    
   }
-  .hero--section--img{
+
+  .hero--section--img {
     width: 80%;
     margin: 0 auto;
   }
-.hero--section-description{
-  padding: 10px;
-  margin-bottom: 0;
-}
-.about--section{
-  padding: 0;
-}
+
+  .hero--section-description {
+    padding: 10px;
+    margin-bottom: 0;
+  }
+
   .skills-container {
     justify-content: center;
   }
@@ -937,9 +948,11 @@ input[type="checkbox"] {
     flex-direction: column;
     padding: 0;
   }
-.contact--input{
-  width: 300px
-}
+
+  .contact--input {
+    width: 300px;
+  }
+
   .contact-form-first-div {
     height: auto;
   }
