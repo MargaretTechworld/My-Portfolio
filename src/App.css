@@ -1,5 +1,9 @@
 /* Global CSS */
-
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -16,6 +20,101 @@ p {
   margin: 0;
 }
 
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.slide img {
+  width: 100%;
+  border-radius: 5%;
+  margin: 0 auto;
+}
+.p-section {
+  margin: 3rem auto;
+  width:80%;
+  position: 'relative';
+  z-index: 1;
+}
+.slide-card{
+  background: #fff;
+  box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.15);
+  padding: 20px 10px 10px 10px;
+  border-radius: 7%;
+}
+.slide-link{
+  display: flex;
+  justify-content: space-between;
+}
+
+.slide-content{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: black;
+  padding: 5%;
+  line-height: 25px;
+}
+
+.slide {
+  transform: scale(0.2);
+  transition: transform 300ms;
+  opacity: 0.5;
+}
+.slide:hover{
+  transform: scale(1,1);
+  opacity:1 ;
+}
+.project-heading{
+  text-align: center;
+  margin-bottom: 1%;
+}
+.project-paragraph{
+  text-align: center;
+  color: black;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  margin-bottom: 30px;
+  margin-bottom: 1%;
+}
+
+.activeSlide {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+.arrow {
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.arrow svg {
+  transition: color 300ms;
+}
+
+.arrow:hover {
+  color: pink;
+}
+
+.next {
+  right: 0%;
+  top: 50%;
+  z-index: 1;
+}
+
+.prev {
+  left: 0%;
+  top: 50%;
+  z-index: 1;
+}
 :root {
   --primary: #5e3bee;
   --heading-color: #282938;
@@ -94,7 +193,7 @@ p {
 
 /* Heading 1 */
 h1 {
-  font-size: 56px;
+  font-size: 54px;
   font-weight: 700;
   line-height: 67px;
 }
@@ -181,6 +280,7 @@ h3 {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 2;
 }
 
 .navbar--items > ul {
@@ -225,7 +325,7 @@ h3 {
 .hero--section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 133.333px 85.333px 133.333px;
+  padding: 80.333px 55.333px 50.333px;
   align-items: center;
   justify-content: space-between;
   gap: 32px;
@@ -272,6 +372,7 @@ h3 {
 
 .hero--section--img {
   display: flex;
+  width: 85%;
 }
 
 .hero--section--img > img {
@@ -519,17 +620,25 @@ h3 {
 
 .live-link {
   text-decoration: none;
-  color: #000;
+  color: black;
 }
 
 .live-link:hover {
-  background-color: #5e3bee;
-  color: #fff;
+  background-color: black;
+  color: white;
+  padding: 1%;
+  border-radius: 20%;
 }
 
-.Github-link {
+.github-link {
   text-decoration: none;
-  color: #fff;
+  color: black;
+}
+.github-link:hover {
+  background-color: black;
+  color: white;
+  padding: 1%;
+  border-radius: 20%;
 }
 
 .right-arrow {
@@ -779,13 +888,39 @@ input[type="checkbox"] {
   .btn-outline-primary {
     display: none;
   }
+  .next {
+    right: 0%;
+    top: 40%;
+  }
+  
+  .prev {
+    left: 0%;
+    top: 40%;
+  }
+  h3{
+    text-align: center;
+  }
+  h1{
+    text-align: center;
+  }
 
   .hero--section {
     display: flex;
+    padding: 133.333px 0px 30.333px;
     flex-direction: column-reverse;
-    padding-bottom: 70px;
+    
   }
-
+  .hero--section--img{
+    width: 80%;
+    margin: 0 auto;
+  }
+.hero--section-description{
+  padding: 10px;
+  margin-bottom: 0;
+}
+.about--section{
+  padding: 0;
+}
   .skills-container {
     justify-content: center;
   }
@@ -800,8 +935,11 @@ input[type="checkbox"] {
 
   .contact--section {
     flex-direction: column;
+    padding: 0;
   }
-
+.contact--input{
+  width: 300px
+}
   .contact-form-first-div {
     height: auto;
   }
