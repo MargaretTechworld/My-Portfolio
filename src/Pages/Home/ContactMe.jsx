@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -38,7 +39,20 @@ const ContactMe = () => {
       </div>
       <section id="Contact" className="contact--section">
         <div>
-          <img className="us-img" src="./img/us.jpg" alt="me" />
+          <motion.img
+            className="us-img"
+            src="./img/us.jpg"
+            alt="me"
+            initial={{ y: -1000 }}
+            animate={{
+              y: [-5, 10, -5],
+              transition: {
+                duration: 2,
+                repeat: Infinity,
+                repeatType: 'reverse',
+              },
+            }}
+          />
           <div className="contact-form-first-div">
             <p>
               <img className="contact-social" src="https://img.icons8.com/?size=96&id=13826&format=png" alt="email-icon" />
