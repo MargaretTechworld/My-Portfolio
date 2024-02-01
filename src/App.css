@@ -1000,8 +1000,7 @@ input[type="checkbox"] {
 
   .about--section {
     gap: 20px;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 4px;
   }
 
   .testimonial--section--card {
