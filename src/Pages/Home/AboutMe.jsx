@@ -23,7 +23,7 @@ const AboutMe = () => (
             </div>
           ))}
         </div>
-        <a href="https://www.dropbox.com/scl/fi/kycblotd0twbf021v9db5/Margaret_Kojo_Musa_Resume.pdf?rlkey=pl1h9h69qscbyqxotwfl1bo8w&dl=0" className="btn btn-primary" target="_blank" rel="noreferrer">Get My Resume</a>
+        <a href="https://www.dropbox.com/scl/fi/x8ec1t3n1fdgivolbex4y/Margaret_Kojo_Musa_Resume.pdf?rlkey=imqaqmwloq86873e25be1377a&dl=0" className="btn btn-primary" target="_blank" rel="noreferrer">Get My Resume</a>
       </div>
     </div>
     <div className="about--section--img">
