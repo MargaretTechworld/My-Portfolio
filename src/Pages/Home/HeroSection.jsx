@@ -8,7 +8,7 @@ const HeroSection = () => (
     <div className="hero--section--content--box">
       <div className="hero--section--content">
         <p className="section--title">Hey, I&apos;m Margaret</p>
-        <h1 style={{ paddingTop: '0.3rem', margin: 'auto 0', fontWeight: 'normal' }}>
+        <h1 className="type-text" style={{ paddingTop: '0.3rem', margin: 'auto 0', fontWeight: 'normal' }}>
           <span style={{ color: '#1C1E5B', fontWeight: 'bold' }}>
             <Typewriter
               words={['Full-Stack Developer', 'Full-Stack Developer', 'Full-Stack Developer', 'Full-Stack Developer']}

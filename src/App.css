@@ -898,8 +898,17 @@ input[type="checkbox"] {
     display: none;
   }
 
+  .slide-card {
+    padding: 20px 20px 20px 20px;
+    border-radius: 0;
+  }
+
   .text-lg {
     margin-bottom: 0;
+  }
+
+  .type-text {
+    font-size: 32px;
   }
 
   .next {
@@ -936,12 +945,32 @@ input[type="checkbox"] {
     margin-bottom: 0;
   }
 
+  .hero--section--content {
+    gap: 0;
+  }
+
   .skills-container {
     justify-content: center;
   }
 
   .tech-skill-title {
     text-align: center;
+  }
+
+  .connect {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .us-img {
+    margin-left: -40px;
+    border-radius: 50%;
+  }
+
+  .social {
+    margin-bottom: 20px;
   }
 
   .skills-heading {
